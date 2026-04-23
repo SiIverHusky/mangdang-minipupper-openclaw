@@ -1,0 +1,15 @@
+[Unit]
+Description=Mini Pupper OpenClaw Voice Daemon
+After=network-online.target sound.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ubuntu/apps-md/openclaw-app
+ExecStart=/usr/bin/python3 /home/ubuntu/apps-md/openclaw-app/openclaw_app.py
+Restart=always
+RestartSec=2
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

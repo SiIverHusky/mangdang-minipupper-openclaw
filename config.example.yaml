@@ -1,0 +1,28 @@
+google:
+  credentials_path: ""
+  stt_language_code: "en-US"
+  tts_voice_name: "en-US-Neural2-D"
+  tts_sample_rate_hz: 24000
+
+audio:
+  input_device: null
+  output_device: null
+  sample_rate_hz: 16000
+  frame_ms: 30
+  vad_rms_threshold: 0.015
+  vad_start_frames: 3
+  silence_timeout_ms: 900
+  max_utterance_ms: 12000
+
+gateway:
+  url: "http://127.0.0.1:8081/chat"
+  token: ""
+  timeout_ms: 30000
+  session: "agent:main:minipupper-talk"
+  source: "minipupper-voice"
+
+app:
+  interrupt_on_speech: true
+  status_path: "/tmp/minipupper-voice-status.json"
+  log_level: "INFO"
+  playback_barge_in_delay_ms: 700

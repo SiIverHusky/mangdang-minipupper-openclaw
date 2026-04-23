@@ -1,0 +1,9 @@
+google-auth
+google-cloud-speech
+google-cloud-texttospeech
+numpy
+pyaudio
+python-dotenv
+PyYAML
+requests
+sounddevice
